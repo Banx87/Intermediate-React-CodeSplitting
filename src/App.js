@@ -2,10 +2,11 @@ import React, { useState, lazy, Suspense } from "react";
 import ReactDOM from "react-dom";
 import { Router, Link } from "@reach/router";
 //import Details from "./Details"; Moved away from here 'cause the lazy loading (const Details)
-import SearchParams from "./SearchParams";
+//import SearchParams from "./SearchParams";
 import ThemeContext from "./ThemeContext";
 
 const Details = lazy(() => import("./Details"));
+const SearchParams = lazy(() => import("./SearchParams"));
 
 const App = () => {
   const theme = useState("darkblue");
